@@ -47,8 +47,20 @@ A collection of useful Windows tools in one simple, modern application.
 
 ## 👨‍💻 Developer
 
-Created by **Zaid**.
+Created by **Zaid Ma'aitah**.
 
 ---
 
-If you find this project useful, consider giving it a ⭐!
+## © Copyright
+
+Copyright © 2026 Zaid Ma'aitah. All Rights Reserved.
+
+Windows Tools is proprietary software.
+
+No copying, modification, redistribution, republishing, or commercial use is permitted without prior written permission from the copyright owner, except where applicable law provides otherwise.
+
+For permissions and licensing inquiries, please contact the copyright owner.
+
+---
+
+**Thank you for visiting Windows Tools!** ⭐
