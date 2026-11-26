@@ -1,6 +1,8 @@
 
 # 🛠️ Windows Tools
 
+![Windows Tools Screenshot](Screenshot.png)
+
 A collection of useful Windows tools in one simple, modern application.
 
 **Windows Tools v1.0** — Built with PowerShell and Windows Forms.
