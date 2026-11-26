@@ -1,15 +1,42 @@
-# Windows Tools
 
-A collection of useful Windows tools built with PowerShell.
+# 🛠️ Windows Tools
 
-## Features
-- Simple and easy-to-use interface
-- Arabic user interface
-- 15 useful Windows tools
+A collection of useful Windows tools in one simple, modern application.
 
-## Requirements
-- Windows 10 or Windows 11
+**Windows Tools v1.0** — Built with PowerShell and Windows Forms.
+
+## ✨ Features
+
+- 15 useful Windows tools.
+- Simple and modern dark interface.
+- Arabic user interface.
+- Lightweight and easy to use.
+- Designed for Windows 10 and Windows 11.
+
+## 📥 Download
+
+**[Download Windows Tools v1.0](https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest)**
+
+## 🚀 How to Run
+
+1. Download the application from Releases.
+2. Extract the downloaded file if it is inside a ZIP archive.
+3. Run `WindowsTools_v4.exe`.
+
+## 🧰 Built With
+
 - PowerShell
+- Windows Forms
+- PS2EXE
 
-## Author
-zzaaiiddcpu
+## 🌐 Official Website
+
+[Visit Windows Tools Website](https://zzaaiiddcpu.github.io/Windows-Tools/)
+
+## 👨‍💻 Developer
+
+Created by **Zaid**.
+
+---
+
+If you find this project useful, consider giving it a ⭐!
