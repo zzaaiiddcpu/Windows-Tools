@@ -4,126 +4,378 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Windows Tools | Official</title>
-<meta name="description" content="Windows Tools - A collection of useful Windows utilities.">
+<meta name="theme-color" content="#090d18">
+<meta name="description" content="Windows Tools - 15 useful Windows utilities with a simple Arabic interface.">
+<title>Windows Tools | Official Website</title>
+
+<link rel="icon" href="WindowsTools_fixed.ico">
+
 <style>
+:root{
+  --bg:#090d18;
+  --panel:#111a2b;
+  --blue:#4d8cff;
+  --light:#8bb7ff;
+  --text:#f1f5ff;
+  --muted:#a0aec4;
+  --border:#263650;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
- background:#090d18;color:#edf2ff;
- font-family:Segoe UI,Arial,sans-serif;
- line-height:1.7;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Segoe UI,Arial,sans-serif;
+  line-height:1.7;
 }
 a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+
+/* Navigation */
 nav{
- max-width:1100px;margin:auto;padding:22px 24px;
- display:flex;align-items:center;justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#090d18ed;
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #202b40;
 }
-.logo{font-size:21px;font-weight:800;letter-spacing:.3px}
-.logo span{color:#5794ff}
-nav a:last-child{color:#aebbd2;font-size:14px}
+.nav-inner{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:21px;
+  font-weight:800;
+}
+.brand img{width:39px;height:39px;object-fit:contain}
+.brand span{color:var(--blue)}
+.nav-link{
+  color:#c1cee3;
+  font-size:14px;
+  transition:.2s;
+}
+.nav-link:hover{color:white}
+
+/* Hero */
 .hero{
- text-align:center;padding:100px 20px 95px;
- background:radial-gradient(ellipse at 50% 20%,#18366c 0%,#0d1931 38%,#090d18 75%);
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  padding:100px 18px 105px;
+  background:
+    radial-gradient(ellipse at 50% 0%,#1b3d70 0%,#101d35 42%,#090d18 78%);
+}
+.hero-content{position:relative;z-index:1}
+.hero-logo{
+  width:112px;
+  height:112px;
+  object-fit:contain;
+  padding:13px;
+  border:1px solid #527dbb66;
+  border-radius:28px;
+  background:#14233b;
+  box-shadow:0 15px 55px #0008;
 }
 .tag{
- display:inline-block;border:1px solid #294b80;
- color:#8bb7ff;background:#122747;
- padding:6px 14px;border-radius:30px;font-size:13px;
+  display:table;
+  margin:25px auto 15px;
+  padding:5px 15px;
+  border:1px solid #355783;
+  border-radius:30px;
+  color:#a9ccff;
+  background:#152b4b;
+  font-size:12px;
+  letter-spacing:1px;
 }
-h1{font-size:clamp(38px,7vw,68px);line-height:1.12;margin:24px 0 18px}
-h1 span{color:#66a0ff}
-.hero p{color:#aab8d0;max-width:620px;margin:0 auto;font-size:17px}
-.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:32px}
+h1{
+  font-size:clamp(40px,7vw,70px);
+  line-height:1.12;
+  margin:15px 0 20px;
+  letter-spacing:-2px;
+}
+h1 span{
+  color:var(--blue);
+}
+.hero-description{
+  max-width:650px;
+  margin:auto;
+  color:var(--muted);
+  font-size:17px;
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:32px;
+}
 .btn{
- display:inline-block;padding:13px 24px;border-radius:10px;
- font-weight:700;transition:.2s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:13px 25px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:700;
+  transition:.25s;
 }
-.primary{background:#397cf5;color:white;box-shadow:0 8px 28px #2869e655}
-.secondary{border:1px solid #34435d;color:#dce7ff}
 .btn:hover{transform:translateY(-3px)}
-section{max-width:1050px;margin:auto;padding:75px 22px}
-.section-title{text-align:center;font-size:30px;margin-bottom:12px}
-.section-desc{text-align:center;color:#96a6c0;margin-bottom:35px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{
- background:linear-gradient(145deg,#151f32,#101725);
- border:1px solid #263650;border-radius:16px;padding:26px;
- transition:.2s;
+.btn-primary{
+  color:white;
+  background:linear-gradient(135deg,#5798ff,#2865db);
+  box-shadow:0 8px 28px #2869e655;
 }
-.card:hover{transform:translateY(-5px);border-color:#477ed4}
-.card .symbol{font-size:28px;margin-bottom:12px}
-.card h3{margin-bottom:7px}
-.card p{color:#9eacc3;font-size:14px}
+.btn-secondary{
+  border:1px solid #3a4e6b;
+  color:#e0eaff;
+  background:#152137;
+}
+.version{
+  color:#8294b0;
+  font-size:12px;
+  margin-top:20px;
+}
+
+/* Sections */
+section{padding:75px 0}
+.section-heading{text-align:center;margin-bottom:38px}
+.section-heading h2{font-size:31px;margin-bottom:8px}
+.section-heading p{color:var(--muted);font-size:14px}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:19px;
+}
+.feature{
+  padding:27px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:linear-gradient(145deg,#151f32,#101725);
+  transition:.25s;
+}
+.feature:hover{
+  transform:translateY(-5px);
+  border-color:#477ed4;
+}
+.feature-icon{
+  width:48px;height:48px;
+  display:grid;place-items:center;
+  border-radius:13px;
+  background:#1b3459;
+  color:#8bb7ff;
+  font-size:23px;
+  margin-bottom:17px;
+}
+.feature h3{font-size:18px;margin-bottom:7px}
+.feature p{font-size:14px;color:var(--muted)}
+
+/* About */
+.about-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:35px;
+  padding:35px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:linear-gradient(130deg,#14223a,#101725);
+}
+.about-box h2{font-size:28px;margin-bottom:12px}
+.about-box p{color:var(--muted);font-size:14px}
+.about-mark{
+  min-height:190px;
+  display:grid;
+  place-items:center;
+  border-radius:16px;
+  background:radial-gradient(circle,#244779,#111b2c 70%);
+}
+.about-mark img{width:105px;height:105px;object-fit:contain}
+
+/* Download */
 .download{
- text-align:center;background:linear-gradient(120deg,#142b50,#101a2d);
- border:1px solid #2b4d7c;border-radius:20px;padding:50px 20px;
+  text-align:center;
+  padding:52px 20px;
+  border:1px solid #34598c;
+  border-radius:20px;
+  background:linear-gradient(120deg,#172f53,#101a2d);
 }
-.download p{color:#aab8d0;margin:12px auto 20px}
+.download h2{font-size:30px}
+.download p{color:var(--muted);margin:10px 0 22px}
+
+/* Footer */
 footer{
- text-align:center;padding:30px 15px;border-top:1px solid #202b40;
- color:#8291aa;font-size:13px;
+  padding:30px 15px;
+  text-align:center;
+  border-top:1px solid #202b40;
+  color:#8291aa;
+  font-size:13px;
 }
 footer a{color:#8bb7ff}
-@media(max-width:600px){
- .hero{padding:75px 18px}
- nav{padding:18px}
- section{padding:55px 18px}
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:22px;
+  margin-bottom:12px;
+}
+
+@media(max-width:750px){
+  .features{grid-template-columns:1fr}
+  .about-box{grid-template-columns:1fr}
+  .about-mark{min-height:150px}
+}
+@media(max-width:480px){
+  .hero{padding:75px 15px}
+  .nav-inner{min-height:65px}
+  .brand{font-size:18px}
+  .section-heading h2{font-size:26px}
+  .download h2{font-size:25px}
 }
 </style>
 </head>
+
 <body>
 
 <nav>
- <div class="logo">Windows <span>Tools.</span></div>
- <a href="https://github.com/zzaaiiddcpu/Windows-Tools">GitHub ↗</a>
+  <div class="container nav-inner">
+    <a class="brand" href="#">
+      <img src="WindowsTools_fixed.ico" alt="Windows Tools">
+      <div>Windows <span>Tools.</span></div>
+    </a>
+    <a class="nav-link" href="https://github.com/zzaaiiddcpu/Windows-Tools">
+      GitHub ↗
+    </a>
+  </div>
 </nav>
 
 <main>
-<div class="hero">
- <span class="tag">✦ Official Project</span>
- <h1>Make Windows<br><span>Work Better.</span></h1>
- <p>A collection of 15 useful Windows tools, built to make everyday tasks easier with a simple Arabic interface.</p>
- <div class="actions">
-  <a class="btn primary" href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">↓ Download Now</a>
-  <a class="btn secondary" href="https://github.com/zzaaiiddcpu/Windows-Tools">Explore on GitHub ↗</a>
- </div>
-</div>
+
+<header class="hero">
+  <div class="hero-content">
+    <img class="hero-logo"
+         src="WindowsTools_fixed.ico"
+         alt="Windows Tools Logo">
+
+    <span class="tag">OFFICIAL WINDOWS PROJECT</span>
+
+    <h1>Make Windows<br><span>Work Better.</span></h1>
+
+    <p class="hero-description">
+      A collection of 15 useful Windows tools,
+      designed to make everyday tasks easier
+      with a simple Arabic interface.
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-primary"
+         href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">
+        ↓ Download Windows Tools
+      </a>
+
+      <a class="btn btn-secondary"
+         href="https://github.com/zzaaiiddcpu/Windows-Tools">
+        Explore GitHub ↗
+      </a>
+    </div>
+
+    <p class="version">Latest release: v1.0 · Windows 10 / 11</p>
+  </div>
+</header>
 
 <section>
- <h2 class="section-title">What's Inside?</h2>
- <p class="section-desc">Useful tools. Simple experience.</p>
- <div class="cards">
-  <article class="card">
-   <div class="symbol">⚡</div>
-   <h3>15 Useful Tools</h3>
-   <p>A collection of utilities for everyday Windows tasks.</p>
-  </article>
-  <article class="card">
-   <div class="symbol">🌙</div>
-   <h3>Modern Interface</h3>
-   <p>A clean, dark interface designed for comfortable use.</p>
-  </article>
-  <article class="card">
-   <div class="symbol">🌐</div>
-   <h3>Arabic Support</h3>
-   <p>An easy-to-use interface for Arabic-speaking users.</p>
-  </article>
- </div>
+  <div class="container">
+    <div class="section-heading">
+      <h2>Why Windows Tools?</h2>
+      <p>Everything you need in one simple application.</p>
+    </div>
+
+    <div class="features">
+
+      <article class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>15 Useful Tools</h3>
+        <p>
+          A collection of utilities for everyday
+          Windows tasks.
+        </p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">🌙</div>
+        <h3>Modern Interface</h3>
+        <p>
+          A clean dark design for a comfortable
+          user experience.
+        </p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">🌐</div>
+        <h3>Arabic Support</h3>
+        <p>
+          An easy-to-use Arabic interface
+          designed for simplicity.
+        </p>
+      </article>
+
+    </div>
+  </div>
 </section>
 
 <section>
- <div class="download">
-  <h2>Ready to get started?</h2>
-  <p>Download Windows Tools v1.0 and explore the utilities.</p>
-  <a class="btn primary" href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">Download Windows Tools</a>
- </div>
+  <div class="container">
+    <div class="about-box">
+      <div>
+        <h2>One App. Multiple Tools.</h2>
+        <p>
+          Windows Tools brings useful Windows utilities
+          together in one application. Open the app,
+          choose a tool, and get things done.
+        </p>
+      </div>
+
+      <div class="about-mark">
+        <img src="WindowsTools_fixed.ico" alt="Windows Tools">
+      </div>
+    </div>
+  </div>
 </section>
+
+<section>
+  <div class="container">
+    <div class="download">
+      <h2>Ready to get started?</h2>
+      <p>
+        Get the latest version of Windows Tools
+        from the official GitHub release.
+      </p>
+
+      <a class="btn btn-primary"
+         href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">
+        ↓ Download v1.0
+      </a>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer>
- <p>Windows Tools © 2026</p>
- <p>Created by <a href="https://github.com/zzaaiiddcpu">zzaaiiddcpu</a></p>
+  <div class="footer-links">
+    <a href="https://github.com/zzaaiiddcpu/Windows-Tools">Repository</a>
+    <a href="https://github.com/zzaaiiddcpu/Windows-Tools/releases">Releases</a>
+    <a href="https://github.com/zzaaiiddcpu">Developer</a>
+  </div>
+
+  <p>Windows Tools © 2026</p>
+  <p>Created by zzaaiiddcpu</p>
 </footer>
 
 </body>
