@@ -1,76 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Windows Tools</title>
+<title>Windows Tools | Official</title>
+<meta name="description" content="Windows Tools - A collection of useful Windows utilities.">
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-  margin:0;background:#10131b;color:#edf1fa;
-  font-family:Segoe UI,Arial,sans-serif;
-  text-align:center
+ background:#090d18;color:#edf2ff;
+ font-family:Segoe UI,Arial,sans-serif;
+ line-height:1.7;
 }
-header{padding:25px}
-header img{width:90px;height:90px;object-fit:contain}
-h1{font-size:42px;margin:12px 0;color:#fff}
-p{color:#aab4c7;line-height:1.8}
-.hero{padding:65px 20px 85px}
-.hero p{font-size:18px}
+a{text-decoration:none;color:inherit}
+nav{
+ max-width:1100px;margin:auto;padding:22px 24px;
+ display:flex;align-items:center;justify-content:space-between;
+}
+.logo{font-size:21px;font-weight:800;letter-spacing:.3px}
+.logo span{color:#5794ff}
+nav a:last-child{color:#aebbd2;font-size:14px}
+.hero{
+ text-align:center;padding:100px 20px 95px;
+ background:radial-gradient(ellipse at 50% 20%,#18366c 0%,#0d1931 38%,#090d18 75%);
+}
+.tag{
+ display:inline-block;border:1px solid #294b80;
+ color:#8bb7ff;background:#122747;
+ padding:6px 14px;border-radius:30px;font-size:13px;
+}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.12;margin:24px 0 18px}
+h1 span{color:#66a0ff}
+.hero p{color:#aab8d0;max-width:620px;margin:0 auto;font-size:17px}
+.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:32px}
 .btn{
- display:inline-block;background:#477cf5;color:white;
- padding:14px 28px;border-radius:9px;text-decoration:none;
- font-weight:bold;margin-top:20px
+ display:inline-block;padding:13px 24px;border-radius:10px;
+ font-weight:700;transition:.2s;
 }
-section{padding:45px 20px}
-.features{
- display:flex;flex-wrap:wrap;justify-content:center;
- gap:18px;max-width:900px;margin:30px auto
+.primary{background:#397cf5;color:white;box-shadow:0 8px 28px #2869e655}
+.secondary{border:1px solid #34435d;color:#dce7ff}
+.btn:hover{transform:translateY(-3px)}
+section{max-width:1050px;margin:auto;padding:75px 22px}
+.section-title{text-align:center;font-size:30px;margin-bottom:12px}
+.section-desc{text-align:center;color:#96a6c0;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{
+ background:linear-gradient(145deg,#151f32,#101725);
+ border:1px solid #263650;border-radius:16px;padding:26px;
+ transition:.2s;
 }
-.feature{
- background:#1b2230;padding:24px;border-radius:14px;
- width:240px;border:1px solid #303b50
+.card:hover{transform:translateY(-5px);border-color:#477ed4}
+.card .symbol{font-size:28px;margin-bottom:12px}
+.card h3{margin-bottom:7px}
+.card p{color:#9eacc3;font-size:14px}
+.download{
+ text-align:center;background:linear-gradient(120deg,#142b50,#101a2d);
+ border:1px solid #2b4d7c;border-radius:20px;padding:50px 20px;
 }
-footer{padding:25px;color:#8490a5;border-top:1px solid #293143}
+.download p{color:#aab8d0;margin:12px auto 20px}
+footer{
+ text-align:center;padding:30px 15px;border-top:1px solid #202b40;
+ color:#8291aa;font-size:13px;
+}
+footer a{color:#8bb7ff}
+@media(max-width:600px){
+ .hero{padding:75px 18px}
+ nav{padding:18px}
+ section{padding:55px 18px}
+}
 </style>
 </head>
 <body>
-<header>
-<img src="WindowsTools_fixed.ico" alt="Windows Tools logo">
-<h1>Windows Tools</h1>
-<p>Simple tools. Better Windows experience.</p>
-</header>
 
+<nav>
+ <div class="logo">Windows <span>Tools.</span></div>
+ <a href="https://github.com/zzaaiiddcpu/Windows-Tools">GitHub ↗</a>
+</nav>
+
+<main>
 <div class="hero">
-<h2>Your Windows toolkit</h2>
-<p>A collection of 15 useful Windows tools with a simple Arabic interface.</p>
-<a class="btn" href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">
-Download Windows Tools
-</a>
+ <span class="tag">✦ Official Project</span>
+ <h1>Make Windows<br><span>Work Better.</span></h1>
+ <p>A collection of 15 useful Windows tools, built to make everyday tasks easier with a simple Arabic interface.</p>
+ <div class="actions">
+  <a class="btn primary" href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">↓ Download Now</a>
+  <a class="btn secondary" href="https://github.com/zzaaiiddcpu/Windows-Tools">Explore on GitHub ↗</a>
+ </div>
 </div>
 
 <section>
-<h2>Features</h2>
-<div class="features">
-<div class="feature">
-<h3>15 Useful Tools</h3>
-<p>Helpful utilities for everyday Windows tasks.</p>
-</div>
-<div class="feature">
-<h3>Easy to Use</h3>
-<p>A simple and user-friendly interface.</p>
-</div>
-<div class="feature">
-<h3>Arabic Interface</h3>
-<p>Designed with Arabic-speaking users in mind.</p>
-</div>
-</div>
+ <h2 class="section-title">What's Inside?</h2>
+ <p class="section-desc">Useful tools. Simple experience.</p>
+ <div class="cards">
+  <article class="card">
+   <div class="symbol">⚡</div>
+   <h3>15 Useful Tools</h3>
+   <p>A collection of utilities for everyday Windows tasks.</p>
+  </article>
+  <article class="card">
+   <div class="symbol">🌙</div>
+   <h3>Modern Interface</h3>
+   <p>A clean, dark interface designed for comfortable use.</p>
+  </article>
+  <article class="card">
+   <div class="symbol">🌐</div>
+   <h3>Arabic Support</h3>
+   <p>An easy-to-use interface for Arabic-speaking users.</p>
+  </article>
+ </div>
 </section>
 
+<section>
+ <div class="download">
+  <h2>Ready to get started?</h2>
+  <p>Download Windows Tools v1.0 and explore the utilities.</p>
+  <a class="btn primary" href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">Download Windows Tools</a>
+ </div>
+</section>
+</main>
+
 <footer>
-<p>Windows Tools | Created by zzaaiiddcpu</p>
-<p>© 2026 Windows Tools</p>
-<a href="https://github.com/zzaaiiddcpu/Windows-Tools" style="color:#7da3ff">GitHub Repository</a>
+ <p>Windows Tools © 2026</p>
+ <p>Created by <a href="https://github.com/zzaaiiddcpu">zzaaiiddcpu</a></p>
 </footer>
+
 </body>
 </html>
