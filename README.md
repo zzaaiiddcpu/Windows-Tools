@@ -1,6 +1,16 @@
 
 # 🛠️ Windows Tools
 
+<p align="center">
+  <a href="https://zzaaiiddcpu.github.io/Windows-Tools/">
+    🌐 Official Website
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/zzaaiiddcpu/Windows-Tools/releases/latest">
+    📥 Download
+  </a>
+</p>
+
 ![Windows Tools Screenshot](Screenshot.png)
 
 A collection of useful Windows tools in one simple, modern application.
